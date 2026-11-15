@@ -1,0 +1,22 @@
+{
+  "name": "dead-link-detective",
+  "version": "1.0.0",
+  "description": "Finds broken links before your users do. Checks a list of URLs concurrently and reports status codes, slow responses and redirects.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "dead-link-detective": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js check urls.txt",
+    "check": "node src/cli.js check",
+    "serve": "node src/cli.js serve",
+    "demo": "node demo/run-demo.js",
+    "test": "node --test"
+  },
+  "keywords": ["broken-links", "link-checker", "http", "nodejs", "cli"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

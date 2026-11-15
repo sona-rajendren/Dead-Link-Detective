@@ -1,0 +1,23 @@
+# Dead Link Detective - sample URL list
+# One URL per line. Blank lines and lines starting with # are ignored.
+# A scheme is optional: "example.com" is treated as "https://example.com".
+
+https://example.com
+https://nodejs.org/en
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+https://www.npmjs.com
+https://github.com
+
+# Redirects (http -> https, www -> non-www)
+http://github.com
+http://nodejs.org
+
+# Intentionally broken links
+https://github.com/this-repository-does-not-exist-404
+https://example.com/this-page-does-not-exist
+https://this-domain-does-not-exist-12345.invalid
+
+# Slow and failing responses (httpbin.org)
+https://httpbin.org/delay/3
+https://httpbin.org/status/500
+https://httpbin.org/redirect/3
